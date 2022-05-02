@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                                                   xmlns:app="http://schemas.android.com/apk/res-auto"
+                                                   xmlns:tools="http://schemas.android.com/tools"
+                                                   android:layout_width="match_parent"
+                                                   android:layout_height="match_parent"
+                                                   android:foreground="?attr/actionBarDivider">
+    <Button
+            android:layout_width="68dp"
+            android:layout_height="48dp" android:id="@+id/saveButton"
+            app:layout_constraintBottom_toBottomOf="parent" android:layout_marginBottom="28dp"
+            android:layout_marginEnd="34dp"
+            app:layout_constraintEnd_toEndOf="parent" android:text="Save"/>
+    <Button
+            android:layout_width="97dp"
+            android:layout_height="53dp" android:id="@+id/delButton"
+            app:layout_constraintBottom_toBottomOf="parent" android:layout_marginBottom="28dp"
+            android:text="Delete" app:layout_constraintStart_toStartOf="parent" android:layout_marginStart="32dp"/>
+    <EditText
+            android:layout_width="221dp"
+            android:layout_height="45dp"
+            android:inputType="textPersonName"
+            android:ems="10"
+            android:id="@+id/nameNoteField"
+            app:layout_constraintStart_toStartOf="parent" android:layout_marginStart="32dp"
+            app:layout_constraintTop_toTopOf="parent" android:layout_marginTop="16dp"
+    />
+    <EditText
+            android:layout_width="400dp"
+            android:layout_height="375dp"
+            android:inputType="textMultiLine"
+            android:gravity="start|top"
+            android:ems="10"
+            app:layout_constraintStart_toStartOf="parent" android:layout_marginStart="16dp"
+            android:id="@+id/contentNoteField"
+            android:layout_marginTop="40dp"
+            app:layout_constraintTop_toBottomOf="@+id/nameNoteField" android:layout_marginBottom="2dp"
+            app:layout_constraintBottom_toTopOf="@+id/saveButton" android:layout_marginEnd="16dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:background="@color/teal_700"/>
+</androidx.constraintlayout.widget.ConstraintLayout>
